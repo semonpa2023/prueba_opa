@@ -41,7 +41,7 @@ function displayResults(perfectNumbers) {
     } else {
         resultsDiv.innerHTML = '<ul>' + perfectNumbers.map(obj => `<li>${obj.number} = ${obj.divisors.join(' + ')}</li>`).join('') + '</ul>';
     }
-    document.getElementById('results-section').style.display = 'block';
+    document.getElementById('results-section').classList.remove('d-none');
 }
 
 // Función para descargar los resultados como un archivo .txt
